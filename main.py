@@ -20,19 +20,8 @@ fan_speed['fast'] = fuzz.trimf(fan_speed.universe, [800, 1600, 1600])
 temperature.view()
 
 # Get temperature
-# while True:
-#     T = input("Input temperature\n")
-#     if int(T) < 25:
-#         break
-# humidity.view()
-# # Get humidity
-# while True:
-#     H = input("Input humidity\n")
-#     if int(H) < 20:
-#         break
-# fan_speed.view()
-T = input()
-H = input()
+T = input("Input temperature\n")
+H = input("Input humidity\n")
 
 # Set rules
 rule1 = ctrl.Rule(temperature['cold'] & humidity['dry'], fan_speed['moderate'])
